@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{823330B9-26B0-4DCF-AC60-5BCEDACF2C1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScoreCalculator", "src\Greed.Domain\ScoreCalculator.csproj", "{A5639735-4E8A-430A-ADC1-FC04D413317F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7B19C937-B9F4-44DE-AB56-33BA78726561}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greed.Tests", "tests\Greed.Tests\Greed.Tests.csproj", "{4C927350-FDF9-497F-84BD-372265E4B0B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greed.Console", "src\Greed.Console\Greed.Console.csproj", "{769DF907-E910-4463-83D4-47A3EB63E6F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5BB89371-721A-43C4-90E3-74BE0330A553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollGenerator", "src\Domain\RollGenerator\RollGenerator.csproj", "{56C64236-B2F9-44C7-BC03-5D315197585D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5639735-4E8A-430A-ADC1-FC04D413317F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5639735-4E8A-430A-ADC1-FC04D413317F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5639735-4E8A-430A-ADC1-FC04D413317F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5639735-4E8A-430A-ADC1-FC04D413317F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C927350-FDF9-497F-84BD-372265E4B0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C927350-FDF9-497F-84BD-372265E4B0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C927350-FDF9-497F-84BD-372265E4B0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C927350-FDF9-497F-84BD-372265E4B0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769DF907-E910-4463-83D4-47A3EB63E6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769DF907-E910-4463-83D4-47A3EB63E6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769DF907-E910-4463-83D4-47A3EB63E6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769DF907-E910-4463-83D4-47A3EB63E6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C64236-B2F9-44C7-BC03-5D315197585D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C64236-B2F9-44C7-BC03-5D315197585D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C64236-B2F9-44C7-BC03-5D315197585D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C64236-B2F9-44C7-BC03-5D315197585D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5639735-4E8A-430A-ADC1-FC04D413317F} = {5BB89371-721A-43C4-90E3-74BE0330A553}
+		{4C927350-FDF9-497F-84BD-372265E4B0B7} = {7B19C937-B9F4-44DE-AB56-33BA78726561}
+		{769DF907-E910-4463-83D4-47A3EB63E6F0} = {823330B9-26B0-4DCF-AC60-5BCEDACF2C1B}
+		{5BB89371-721A-43C4-90E3-74BE0330A553} = {823330B9-26B0-4DCF-AC60-5BCEDACF2C1B}
+		{56C64236-B2F9-44C7-BC03-5D315197585D} = {5BB89371-721A-43C4-90E3-74BE0330A553}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95CA7D8D-740B-451F-89AC-2291424E3FA5}
+	EndGlobalSection
+EndGlobal
