@@ -5,8 +5,21 @@ public class ScoringCalculator
     public static int CalculateScore(List<int> diceRolls)
     {
         int result = 0;
-        
         var groupedNumbers = diceRolls.GroupBy(x => x);
+
+        // Begin Scoring Logic
+
+        if (groupedNumbers.Count() == 3 && diceRolls.Count == 6) {
+            return 800;
+        }
+
+        var listStraight = new List<int> { 1, 2, 3, 4, 5, 6 };
+        diceRolls.Sort();
+        if (diceRolls.SequenceEqual(listStraight)) {
+            return 1200;
+        }
+
+
         foreach ( var groupedNumber in groupedNumbers) {
             result += scoreTriple(groupedNumber);
             result = scoreMultipler(groupedNumber, result);
@@ -14,17 +27,19 @@ public class ScoringCalculator
             
         }
 
-        if (groupedNumbers.Count() == 3 && diceRolls.Count == 6) {
-            result = 800;
-        }
-
-        var listStraight = new List<int> { 1, 2, 3, 4, 5, 6};
-        if (diceRolls.SequenceEqual(listStraight)) {
-            result = 1200; 
-        }
-
         return result;
     }
+
+    //private static int checkStraight (List<int> diceRolls) {
+    //    var listStraight = new List<int> { 1, 2, 3, 4, 5, 6 };
+    //    diceRolls.Sort();
+    //    if (diceRolls.SequenceEqual(listStraight)) {
+    //        return 1200;
+    //    }
+
+    //    return null;
+       
+    //}
 
     private static int scoreMultipler(IGrouping<int, int> groupedNumber, int currentScore) {
         int total = 0;
